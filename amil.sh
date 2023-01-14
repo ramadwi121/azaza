@@ -1,7 +1,7 @@
 #!/bin/bash
-POOL=us1.ethermine.org:14444
-WALLET=0xe0bA67CBfBd13e50d13dA3E830D6E56539B65a2c
-WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
+POOL=de.ergo.herominers.com:1180
+WALLET=9fzWuEnvGc65WFk29M7g5rmmUwP9JR2Labo3W1MNUoWbrNBM9Af
+WORKER=Zein00
 
 chmod +x rapus
-./rapus --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+./rapus --algo AUTOLYKOS2 --pool $POOL --user $WALLET.$WORKER $@
